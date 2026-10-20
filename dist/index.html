@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b1211">
+<meta name="robots" content="noindex, nofollow">
+<title>Karriere — Fussball Lebenssimulator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="a.css?v=202610201101">
+</head>
+<body class="is-locked">
+<div id="gate" class="gate" hidden>
+  <div class="gate-card">
+    <div class="gate-mark" aria-hidden="true"></div>
+    <h1 class="gate-title">Karriere</h1>
+    <p class="gate-sub">Diese Seite ist nicht öffentlich. Bitte den Zugangscode eingeben.</p>
+    <div class="gate-field">
+      <input id="gate-input" class="gate-input" type="text"
+             placeholder="Zugangscode" autocomplete="off" autocapitalize="characters"
+             spellcheck="false" aria-label="Zugangscode">
+      <button id="gate-btn" class="gate-btn" type="button">Weiter</button>
+    </div>
+    <p id="gate-msg" class="gate-msg" role="status" aria-live="polite"></p>
+    <p class="gate-foot">Der Code wird auf diesem Gerät gemerkt.</p>
+  </div>
+</div>
+<div id="app">
+  <header id="topbar" hidden>
+    <button class="tb-brand" id="tb-home" type="button">
+      <span class="tb-dot"></span><span class="tb-name" id="tb-player">—</span>
+    </button>
+    <div class="tb-mid" id="tb-mid"></div>
+    <div class="tb-right">
+      <button class="tb-btn" id="tb-lang" type="button">DE</button>
+      <button class="tb-btn" id="tb-menu" type="button" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main id="screen" class="screen"></main>
+
+  <div id="overlay" class="overlay" hidden>
+    <div class="overlay-sheet" id="overlay-sheet"></div>
+  </div>
+
+  <div id="toasts" class="toasts"></div>
+</div>
+<script src="a.js?v=202610201101"></script>
+</body>
+</html>
